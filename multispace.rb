@@ -480,7 +480,6 @@ def simulate()
   $traveler.each { |t|
     t_thread.push(Thread.new {simulate_travel t})
   }
-  
   t_thread.each { |t| t.join}
 end
 
