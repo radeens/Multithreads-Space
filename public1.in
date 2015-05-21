@@ -1,4 +1,4 @@
-% ruby space.rb simulate public_1.i
+% ruby space.rb simulate public_1.in
 === Starports ===
 Earth 1
 Vulcan 1
