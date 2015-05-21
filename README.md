@@ -41,7 +41,7 @@ Each space simulation is performed for a specific set of simulation parameters. 
       Starships - name of each starship and its capacity
       Travelers - name of each traveler followed by list of starports in itinerary
 Output - possible simulation output for simulation
-The following is an example simulation file:
+##The following is an example simulation file:
       === Starports ===
       Earth 1
       Vulcan 1
@@ -58,7 +58,8 @@ The following is an example simulation file:
 
 ##Space Simulation Driver
 
-Code is provided in the initial space.rb file to read in (and print out) the simulation parameters. Code is also provided to examine the command line parameters specifying the file containing simulation parameters, and whether the program should perform a simulation or simply display or verify the feasibility of the simulation output. The program may be invoked as:
+Code is provided in the initial space.rb file to read in (and print out) the simulation parameters. Code is also provided to examine the command line parameters specifying the file containing simulation parameters, and whether the program should perform a simulation or simply display or verify the feasibility of the simulation output. 
+##The program may be invoked as:
      ruby space.rb [simulate|display|verify] simFileName
 So typing ruby space.rb simulate public1.in would execute a simulation using the simulation parameters in public1.in (ignoring any example simulation output in the file), while typing ruby space.rb verify public1.in would perform an analysis of the simulation output in public1.in to determine whether it is feasible.
 The code in space.rb outputs simulation parameters before simulation output, so that its output (if saved in a file) may be passed directly to the simulation display/verify routines for use in debugging your simulation.
