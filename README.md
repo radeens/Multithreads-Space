@@ -22,12 +22,12 @@ We will begin by describing how the space simulation works. In the simulation, t
     The simulation ends when all travelers reach the final starport on their itinerary.
 
 ##Space Simulation Outputs
-
-A space simulation may be described by a number of simulation events, and the order they occur. Four simulation events and their associated messages are:
-    starship docking at starport
-    starship departing from starport
-    traveler boarding starship at starport
-    traveler departing starship at starport
+    A space simulation may be described by a number of simulation events, and the order they occur. 
+    Four simulation events and their associated messages are:
+          starship docking at starport
+          starship departing from starport
+          traveler boarding starship at starport
+          traveler departing starship at starport
 
 The simulator must output these simulation messages in the order they occur. These messages (and their order of occurrence) may then be analyzed and used to either display the state of the simulation, or to discover whether the simulation results are valid.
 Because the simulation is multithreaded, the order messages are output is dependent on the thread scheduler. Running the same simulation will likely produce different outputs each time.
